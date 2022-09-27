@@ -1,11 +1,10 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getRockets } from '../redux/rockets/rocketSlice';
+import { getRockets } from '../../redux/rockets/rocketSlice';
 
 import './Rockets.css';
 
 const Rockets = () => {
-
   const allRockets = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
 
@@ -17,26 +16,22 @@ const Rockets = () => {
   console.log(allRockets);
 
   return (
-    <Fragment>
-    <div>Rockets List</div>
-    <div> {
-      
+    <>
+      <div>Rockets List</div>
+      <div>
+        {
       allRockets.map((rocket) => (
         <div key={rocket.id}>
           <h2>{rocket.name}</h2>
-          <hr/>
+          <hr />
           <div>{rocket.description}</div>
           <div>{rocket.flickrImages}</div>
           <img className="rocket-image" src={rocket.flickrImages} alt="dragon-pic" />
         </div>
       ))
-
-    }
-    
-    </div>
-    </Fragment>
+     }
+      </div>
+    </>
   );
-}
- 
-
+};
 export default Rockets;
