@@ -15,7 +15,6 @@ const fetchMissions = createAsyncThunk(missionsFetched, async () => {
     mission_id: id,
   }) => ({ name, description, id }));
 
-  console.log(less);
   return less;
 });
 
