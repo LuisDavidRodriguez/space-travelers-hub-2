@@ -18,7 +18,7 @@ const Rockets = () => {
 
   return (
     <Fragment>
-    <div>Rockets</div>
+    <div>Rockets List</div>
     <div> {
       
       allRockets.map((rocket) => (
