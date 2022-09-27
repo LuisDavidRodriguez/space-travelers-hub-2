@@ -9,7 +9,7 @@ const fetchRockets = async () => {
     name: rocket.rocket_name,
     type: rocket.rocket_type,
     description: rocket.description,
-    flickrImages: rocket.flickr_images,
+    flickrImages: rocket.flickr_images[0],
     reserved: false,
   }));
 
