@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rocketSlice';
-import SingleRocket from '../Rockets/SingleRockets';
+import SingleRocket from './SingleRockets';
 
 const Rockets = () => {
   const allRockets = useSelector((state) => state.rockets);
@@ -12,16 +12,15 @@ const Rockets = () => {
       dispatch(getRockets());
     }
   }, [allRockets.length]);
-  //console.log(allRockets);
 
   return (
     <>
       <div>Rockets List</div>
       <div className="rockets-container">
-      {
-      allRockets.length ? <SingleRocket allrocekts={allRockets} /> : <div>No Rockets Found</div>
+        {
+        allRockets.length ? <SingleRocket allrocekts={allRockets} /> : <div>No Rockets Found</div>
       }
-    </div>
+      </div>
     </>
   );
 };
