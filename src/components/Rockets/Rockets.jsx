@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rocketSlice';
-import SingleRocket from '../Rockets/SingleRockets';
+
+import './Rockets.css';
 
 const Rockets = () => {
   const allRockets = useSelector((state) => state.rockets);
@@ -17,11 +18,19 @@ const Rockets = () => {
   return (
     <>
       <div>Rockets List</div>
-      <div className="rockets-container">
-      {
-      allRockets.length ? <SingleRocket allrocekts={allRockets} /> : <div>No Rockets Found</div>
-      }
-    </div>
+      <div>
+        {
+      allRockets.map((rocket) => (
+        <div key={rocket.id}>
+          <h2>{rocket.name}</h2>
+          <hr />
+          <div>{rocket.description}</div>
+          <div>{rocket.flickrImages}</div>
+          <img className="rocket-image" src={rocket.flickrImages} alt="dragon-pic" />
+        </div>
+      ))
+     }
+      </div>
     </>
   );
 };
