@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MyProfile from '../MyProfile/MyProfile/MyProfile';
