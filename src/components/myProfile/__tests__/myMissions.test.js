@@ -19,7 +19,7 @@ describe('Testing missions', () => {
 
   it('Testing MyMissions container with 4 missions We shall have 2 elements filtered', async () => {
     const missions = await getActiveMissions();
-    const action = { type: fetchMissions.fulfilled, payload: missions };
+    const action = { type: fetchMissions.fulfilled.toString(), payload: missions };
     store.dispatch(action);
     render(
       <Provider store={store}>

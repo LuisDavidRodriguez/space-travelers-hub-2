@@ -54,7 +54,8 @@ describe('Testing missions display', () => {
 
   it('Testing Mission container with 4 missions We shall have 4 buttons with the text Join Mission', async () => {
     const missions = await getMissions();
-    const action = { type: fetchMissions.fulfilled, payload: missions };
+    const typeString = fetchMissions.fulfilled.toString();
+    const action = { type: typeString, payload: missions };
     store.dispatch(action);
     render(
       <Provider store={store}>
@@ -73,7 +74,7 @@ describe('Testing missions display', () => {
 
   it('Testing buttons changing the value from Join Mission to Leave Mission', async () => {
     const missions = await getMissions();
-    const action = { type: fetchMissions.fulfilled, payload: missions };
+    const action = { type: fetchMissions.fulfilled.toString(), payload: missions };
     store.dispatch(action);
     render(
       <Provider store={store}>
