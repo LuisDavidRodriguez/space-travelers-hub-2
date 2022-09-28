@@ -25,5 +25,5 @@ const fetchMissions = createAsyncThunk(missionsFetched, async () => {
   return less;
 });
 
-export { NOT_A_MEMBER, IS_A_MEMBER };
+export { NOT_A_MEMBER, IS_A_MEMBER, missionsFetched };
 export default fetchMissions;
