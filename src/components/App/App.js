@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MyProfile from '../MyProfile/MyProfile';
+import MyProfile from '../myProfile/MyProfile/MyProfile';
 import Missions from '../missions/MissionsContainer/MissionsContainer';
 import Rockets from '../Rockets/Rockets';
 import NavBar from '../Navbar/NavBar';

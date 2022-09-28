@@ -13,7 +13,6 @@ const Missions = () => {
       dispatch(getMissions());
     }
   });
-  console.log('missions', missions);
 
   let rows = [];
   if (missions !== 'loading') {
