@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import RocketsProfile from './rockets-profile';
+
 
 const MyProfile = () => (
-  <div>MyProfile</div>
+  <Fragment>
+  <div>MyProfiles</div>
+
+    <div>
+    <RocketsProfile />
+   </div>
+</Fragment>
 );
 
 export default MyProfile;

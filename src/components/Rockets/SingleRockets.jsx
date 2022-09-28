@@ -1,16 +1,17 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelRocket } from '../../redux/rockets/rocketSlice';
+import { PropTypes } from 'prop-types';
 
 import './Rockets.css';
 
-const SingleRocket = (props) => {
+const SingleRocket = ({allrocekts}) => {
     const dispatch = useDispatch();
 
     return (
         <div>
             {
-        props.allrocekts.map((rocket) => (
+        allrocekts.map((rocket) => (
           <div key={rocket.id} className="rocket-card">
             <div className="rocket-card-header">
               <h3>{rocket.rocket_name}</h3>
@@ -49,5 +50,15 @@ const SingleRocket = (props) => {
         </div>
     )
 }
+
+SingleRocket.propTypes = {
+  allrocekts: PropTypes.shape(
+    PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.bool.isRequired,
+    ]),
+  ).isRequired,
+};
+
 
 export default SingleRocket;

@@ -12,7 +12,7 @@ const Rockets = () => {
       dispatch(getRockets());
     }
   }, [allRockets.length]);
-  console.log(allRockets);
+  //console.log(allRockets);
 
   return (
     <>
