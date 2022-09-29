@@ -29,7 +29,7 @@ const SingleRocket = ({ allrocekts }) => {
         allrocekts.map((rocket) => (
 
             <tr key={rocket.id}>
-            <td className="fw-bold"><img className="rocket-image" src={rocket.flickrImages} alt={rocket.rocket_name} /></td>
+            <td><img className="rocket-image" src={rocket.flickrImages} alt={rocket.rocket_name} /></td>
             <td className="fw-bold">{rocket.name}</td>
             <td>{rocket.description}</td>
             <td className="align-middle">
