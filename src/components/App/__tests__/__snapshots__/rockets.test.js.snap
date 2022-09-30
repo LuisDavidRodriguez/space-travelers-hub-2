@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Component Rendering  Matches snapshot 1`] = `
+Array [
+  <div>
+    Rockets List
+  </div>,
+  <div
+    className="rockets-container"
+  >
+    <div>
+      No Rockets Found
+    </div>
+  </div>,
+]
+`;
