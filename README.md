@@ -1,4 +1,6 @@
-## Basick Styling with Bootstrap
+# This app retreive informatin about the SpaceX rockets! 😄
+
+## Basic Styling with Bootstrap
 
 <br />
 
@@ -29,7 +31,7 @@ If you installed git you can clone the code to your machine, or download a ZIP o
 command to clone the files to your machine:
 
 ```bash
-git clone git@github.com:LuisDavidRodriguez/math-magician.git
+git clone git@github.com:LuisDavidRodriguez/space-travelers-hub-2.git
 ```
 - Once the files are on your machine, open the _Portfolio_ folder in [Visual Studio Code](https://code.visualstudio.com/)
 
