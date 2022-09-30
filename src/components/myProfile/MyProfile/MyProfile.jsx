@@ -3,7 +3,7 @@ import MyMissions from '../MyMissions/MyMissions';
 import RocketsProfile from '../rockets-profile';
 
 const MyProfile = () => (
-  <div>
+  <div className="col-11 row">
     <MyMissions />
     <RocketsProfile />
   </div>

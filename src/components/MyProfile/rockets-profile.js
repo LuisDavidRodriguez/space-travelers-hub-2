@@ -7,7 +7,7 @@ const RocketsProfile = () => {
   const newRockets = rockets.filter((rocket) => rocket.reserved === true);
 
   return (
-    <div>
+    <div className="col-xs-10 col-sm-6">
       <h2>My Rockets</h2>
       <table className="pf-table">
         <tbody className="pf-item-list">
