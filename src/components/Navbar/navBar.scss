@@ -8,6 +8,6 @@
   margin: 5px 5px;
 
   &.active {
-    background-color: aqua;
+    background-color: lighten($color: blue, $amount: 42);
   }
 }
