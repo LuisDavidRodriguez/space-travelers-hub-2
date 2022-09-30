@@ -68,13 +68,19 @@ const SingleRocket = ({ allrocekts }) => {
   );
 };
 
+SingleRocket.defaultProps = {
+  allrocekts: { id: 0, name: '' },
+};
+
 SingleRocket.propTypes = {
-  allrocekts: PropTypes.shape(
-    PropTypes.oneOfType([
-      PropTypes.string.isRequired,
-      PropTypes.bool.isRequired,
-    ]),
-  ).isRequired,
+  allrocekts: PropTypes.arrayOf(
+    PropTypes.shape(
+      {
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      },
+    ),
+  ),
 };
 
 export default SingleRocket;
