@@ -9,8 +9,8 @@ const NavBar = () => (
     <h2 className="header-title"> LV`s ST Hub </h2>
 
     <ul>
-      <NavLink to="/Missions" className="Missions">Missions</NavLink>
       <NavLink to="/Rockets" className="Rockets">Rockets</NavLink>
+      <NavLink to="/Missions" className="Missions">Missions</NavLink>
       <NavLink to="/MyProfile" className="Profile">My Profile</NavLink>
     </ul>
   </div>
